@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLY—PALAW</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("IMAGES/APPLY.png");/* Replace 'your-image-url.jpg' with the actual URL or path of your image */
+            background-size: cover; /* Ensure the image covers the entire body */
+            background-position: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            
+        }
+        
+        header {
+            text-align: center;
+            margin-top: 610px;
+        }
+
+        #container {
+            border-radius: 10px;
+            border: 1px solid #333;
+            background-color: rgba(128, 128, 128, 0.2);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+           
+        }
+
+        #container h4 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .button1{
+            background: #000;
+            width: 40%;
+        }
+        .button1:hover{
+            background: #000000ce;
+        }
+        .p{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <u><h1>Welcome to PALAW Application</h1></u>
+    <p class="p">*PLEASE READ TERMS AND CONDITIONS CAREFULLY*
+        <p class="p">*BEFORE APPLYING*
+            <P><a href="termsandconditions.pdf"><button class="button1">Terms&Condition</button></a>
+    </p>
+</header>
+
+<div id="container">
+    <h4>Grow Your Business With PALAW!</h4>
+    <form action="https://formspree.io/f/xwkgpzbn" method="POST">
+        <!-- ... (rest of the form content) ... -->
+        <label>Your Name:</label>
+        <input type="text" name="Name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Instagram:</label>
+        <input type="text" name="instagram" required>
+
+        <label>WhatsApp:</label>
+        <input type="tel" name="Number" required>
+
+        <label>Business Name:</label>
+        <input type="text" name="businessname" required>
+
+        <label>Business Type:</label>
+        <input type="text" name="businesstype" required>
+
+        <label for="message">Tell us about your business and goals:</label>
+        <textarea id="message" name="message" maxlength="80" rows="4" placeholder="Like What Do You Sell" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+<!--FOTTER STARTS HERE-->
+<style>
+    footer {
+      margin-top: 70px;
+      background-color: black;
+      color: white;
+      position: relative;
+      width: 100%;
+      min-height: 100px;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .icons img {
+      border: 2px solid blue;
+      border-radius: 10px;
+      height: 20px;
+      transition: transform 0.3s ease;
+      margin-right: 10px;
+    }
+  
+    .icons img:hover {
+      transform: scale(1.2);
+    }
+  
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+  
+    .menu__item {
+      margin: 0 10px;
+    }
+  
+    .menu__link {
+      font-size: 12px;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.75;
+      font-weight: 200;
+      transition: opacity 0.5s;
+    }
+  
+    .menu__link:hover {
+      opacity: 1;
+    }
+  
+    .copyright {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.75;
+    }
+  </style>
+  
+  <footer>
+    <div class="icons">
+      <a href="https://www.instagram.com/youraccount" target="_blank"><img src="IMAGES/ig22.jpg"></a>
+      <a href="https://www.facebook.com/yourpage" target="_blank"><img src="IMAGES/fb222.jpg"></a>
+      <a href="https://twitter.com/yourhandle" target="_blank"><img src="IMAGES/x.png"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="IMAGES/lnkin.png"></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><img src="IMAGES/w2222.jpg"></a>
+    </div>
+  
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="newsletter.html">Newsletter</a></li>
+      <li class="menu__item"><a class="menu__link" href="Growbusiness.html">Join us</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+    </ul>
+  
+    <p class="copyright">&copy;2024 PALAW | All Rights Reserved</p>
+  </footer>
+  
+  <!--ENDS HERE-->
+</body>
+</html>

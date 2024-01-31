@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website Title</title>
+
+    <style>
+        /* Your existing styles */
+
+        .IMAGES {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the images horizontally */
+        }
+
+        .imgs {
+            width: 80%; /* Set the width to a percentage value */
+            max-width: 200px; /* Set a maximum width if needed */
+            border-radius: 20px;
+            margin-bottom: 10px; /* Add some spacing between images */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .imgs:hover {
+            transform: scale(1.2);
+            z-index: 2;
+        }
+
+        header {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Your other existing styles */
+
+        /* ... (rest of your CSS) ... */
+    </style>
+</head>
+<body>
+
+    
+    
+        <!-- ... (your existing navbar code) ... -->
+        <style>
+            header{
+               font-size: 30px;
+               font-weight: bold;
+               margin-bottom: 20px;
+           }
+           /* Your existing styles */
+   .navbar {
+       background-color: #000;
+       padding: 10px;
+       text-align: center;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .navbar a {
+       color: #fff;
+       text-decoration: none;
+       padding: 10px 20px;
+       display: inline-block;
+   }
+   
+   marquee{
+               font-family: 'Roboto', sans-serif;
+               margin-top: 20px;
+               background: black;
+               color: white;
+               font-size: 17px;
+               margin-bottom: 10px;
+           }
+   
+   .menu-icon {
+       cursor: pointer;
+       font-size: 24px;
+       color: #fff;
+       display: none;
+   }
+   
+   .navbar-links {
+       display: flex;
+   }
+   
+   
+   
+   /* Media query for mobile devices */
+   @media (max-width: 768px) {
+       .navbar-links {
+           display: none;
+           flex-direction: column;
+           width: 100%;
+           text-align: center;
+           position: absolute;
+           top: 60px; /* Adjust this value to your preference */
+           left: 0;
+           background-color: #000;
+           z-index: 1;
+       }
+   
+       .navbar-links a {
+           padding: 10px;
+           width: 100%;
+           box-sizing: border-box;
+       }
+   
+       .menu-icon {
+           display: block;
+       }
+   }
+   
+   .r-img{
+               margin-top: 7px;
+           width: 40px;
+           display: flex;
+           align-items: left;
+           margin-top: -2px;
+           margin-bottom: -8px;
+         
+              
+           }
+           .show {
+       display: flex !important;
+   }
+       </style>
+
+<CENTER><header>ＰＡＬＡＷ</header></CENTER>
+       
+       <div class="navbar">
+           <img class="r-img" src="IMAGES/palaw.png">
+           <div class="menu-icon">&#9776;</div>
+           <div class="navbar-links">
+               <a class="i-b" href="index.html">Home</a>
+               <a class="i-b" href="Shop.html">Shop</a>
+               <a class="i-b" href="about.html">About</a>
+               <a class="i-b" href="service.html">Services</a>
+               <a class="i-b" href="contact.html">Contact</a>
+               <input class="search-box" type="search" placeholder="search box">
+           </div>
+       </div>
+    </div>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navbarLinks = document.querySelector('navbar-links');
+
+    menuIcon.addEventListener('click', function () {
+        navbarLinks.classList.toggle('show');
+    });
+});
+    </script>
+
+    <marquee>  
+        FLAT 🚀 OFF ON YOUR FIRST ORDER!!!  
+    </marquee>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Your existing content goes here -->
+    
+     
+     
+     
+     
+     <!--image slide css-->
+     <style>
+         /* Add your styles for the slider container and images here */
+         #slider-container {
+           width: 300px; /* Adjust the width of the container as needed */
+           height: 150px;
+           margin: auto;
+           overflow: hidden;
+           border-radius: 20px;
+           border:  none #ccc; /* Optional: Add border to the container */
+         }
+     
+         #slider {
+           display: flex;
+           transition: transform 0.5s ease-in-out;
+         }
+     
+         .slide {
+           min-width: 100%;
+           box-sizing: border-box;
+           border: 1px solid #ddd; /* Optional: Add border to each image box */
+           border-radius: 5px; /* Optional: Add border radius to each image box */
+           overflow: hidden;
+         }
+     
+         .slide img {
+           width: 300px;
+           height: auto;
+         }
+          
+       </style>
+     </head>
+     <body>
+
+    <div id="slider-container">
+        <!-- ... (your existing slider code) ... -->
+        <div id="slider">
+            <div class="slide"><a href="apply.html"><img src="IMAGES/banner01.png" width="300px" alt="Slide 1"></a></div>
+            <div class="slide"><a href="#"><img src="IMAGES/green banner.jpg"  width="300px" alt="Slide 2"></a></div>
+            <div class="slide"><a href="Shop.html"><img src="IMAGES/banner02.png"  width="300px" alt="Slide 3"></a></div>
+            <!-- Add more slides as needed -->
+          </div>
+    </div>
+    <script>
+        // JavaScript code for automatic sliding
+        const slider = document.getElementById('slider');
+        let currentIndex = 0;
+      
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % slider.children.length;
+          updateSlider();
+        }
+      
+        function updateSlider() {
+          const translateValue = -currentIndex * 100 + '%';
+          slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+      
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+      </script>
+      
+<center>
+    <h3 class="ctg"><u>CATEGORIES</u></h3>
+</center>
+    <div class="IMAGES">
+        <center>
+        <a href="Shop.html"><img class="imgs" src="IMAGES/MEN'S.png"></a>
+        <a href="Shop.html"><img class="imgs" src="IMAGES/WOMEN'S.png"></a>
+        <a href="Shop.html"><img class="imgs" src="IMAGES/FOOTWARE.png"></a>
+        <a href="Shop.html"><img class="imgs" src="IMAGES/ACCESORIES.png"></a>
+        <a href="commingsoon.html"><img class="imgs" src="IMAGES/COMMINGSOON.gif"></a>
+    </center>
+    </div>
+
+    
+<!--DONT DO ANYYTHING-->
+    <script>
+        // Your existing script for the menu icon
+        document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    menuIcon.addEventListener('click', function () {
+        navbarLinks.classList.toggle('show');
+    });
+});
+    </script>
+<!--SENSITIVE PART-->
+
+<style>
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .icons img {
+        border: 1.6px solid blue;
+        border-radius: 10px;
+        height: 20px;
+        transition: transform 0.3s ease;
+        margin: 0 10px;
+    }
+
+    .icons img:hover {
+        transform: scale(1.2);
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu__item {
+        margin: 0 10px;
+    }
+
+    .menu__link {
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.75;
+        font-weight: 300;
+        transition: opacity 0.5s;
+    }
+
+    .menu__link:hover {
+        opacity: 1;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 12px;
+        opacity: 0.75;
+    }
+</style>
+
+<footer>
+    <div class="icons">
+        <a href="https://www.instagram.com/youraccount" target="_blank"><img class="sls" src="IMAGES/ig22.jpg"></a>
+        <a href="https://www.facebook.com/yourpage" target="_blank"><img class="sls" src="IMAGES/fb222.jpg"></a>
+        <a href="https://twitter.com/yourhandle" target="_blank"><img class="sls" src="IMAGES/x.png"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img class="sls" src="IMAGES/lnkin.png"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="sls" src="IMAGES/w2222.jpg" ></a>
+    </div>
+
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+        <li cla-ss="menu__item"><a class="menu__link" href="about.html">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="newsletter.html">Newsletter</a></li>
+        <li class="menu__item"><a class="menu__link" href="apply.html">Join us</a></li>
+        <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+      </ul>
+      <p>&copy;2024 PALAW | All Rights Reserved</p>
+</footer>
+</body>
+</html>
